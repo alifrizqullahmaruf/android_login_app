@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--logo-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textSize="38sp"
+        android:textColor="#1E319D"
+        android:layout_marginBottom="50dp"
+        />
+
+    <!--textHeading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login to your Account"
+        android:textSize="18sp"
+        android:textColor="#696969"
+        android:textAlignment="textStart"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <!--fieldEmail-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldEmail"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/email"
+        app:hintEnabled="false"
+        android:layout_marginBottom="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--fieldPass-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldPass"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/password"
+        app:hintEnabled="false"
+        app:endIconMode="password_toggle"
+        android:layout_marginBottom="16dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--buttonSignIn-->
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Sign In"
+        android:backgroundTint="@color/first"
+        />
+
+    <!--textAnother-->
+    <TextView
+        android:id="@+id/textAnother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-or sign in with-"
+        android:textSize="16sp"
+        android:textColor="@color/second"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <!--google-->
+    <Button
+        android:id="@+id/google"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Connect with Google"
+        app:icon="@drawable/google"
+        android:textColor="@color/first"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
+    <!--facebook-->
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Connect with Facebook"
+        app:icon="@drawable/facebook"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/first"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
+    <!--textFooter-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account? "
+            android:textSize="16sp"
+            android:textColor="@color/second"
+            />
+        <TextView
+            android:id="@+id/textFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="16sp"
+            android:textColor="@color/first"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "815384528424",
+    "project_id": "login-register-android-e942c",
+    "storage_bucket": "login-register-android-e942c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815384528424:android:1073216915b760df11971d",
+        "android_client_info": {
+          "package_name": "com.example.loginappandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA-WzWVyA86QCYSHfw46F6EkIKnpyiz6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
